@@ -1,0 +1,74 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Set the default font */
+    margin: 0;
+    /* Remove default margins from the body */
+    padding: 20px;
+    /* Add some padding for better readability */
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    /* Center align the heading */
+    font-size: 2em;
+    /* Increase the heading size */
+    margin-bottom: 20px;
+    /* Add some space after the heading */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    /* Arrange form elements horizontally  */
+    flex-direction: column;
+    /* Stack form elements vertically */
+    align-items: center;
+    /* Center align form elements horizontally */
+    margin-bottom: 20px;
+    /* Add some space after the form */
+}
+
+label {
+    margin-bottom: 5px;
+    /* Add space between label and input */
+}
+
+input[type="number"] {
+    padding: 5px;
+    /* Add padding to input fields */
+    border: 1px solid #ccc;
+    /* Add a border to input fields */
+    border-radius: 3px;
+    /* Add rounded corners to input fields */
+}
+
+button {
+    padding: 10px 20px;
+    /* Add padding to the button */
+    background-color: #4CAF50;
+    /* Set a green background color */
+    color: white;
+    /* Set white text color */
+    border: none;
+    /* Remove default border from button */
+    border-radius: 5px;
+    /* Add rounded corners to the button */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+button:hover {
+    background-color: #3e8e41;
+    /* Change button color on hover */
+}
+
+div {
+    text-align: center;
+    /* Center align content horizontally */
+    margin: 0 auto;
+    /* Center content horizontally within its parent */
+}
+
+/* Additional styling can be added here for specific elements */
