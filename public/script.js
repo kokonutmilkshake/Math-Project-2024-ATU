@@ -1,4 +1,6 @@
 //Im in heheheh -s (small commit test)
+
+//Function to pull the homepage values given by the user and provide the relevant dice roll data -s
 function getPartialSum(diceSidesNum) {
     if (diceSidesNum <= 0) {
         return null; // Handle non-positive inputs (optional)
@@ -22,7 +24,9 @@ form.addEventListener('submit', function (event) {
         const sum = roll1 + roll2;
         countArray[sum - 2]++;
     }
+    //End of the Die rolling function -s
 
+    //start of d3 graphic formation
     d3.select("svg").remove();
 
     const svg = d3.select("div").append("svg") // Or select an existing SVG element if needed
@@ -34,7 +38,7 @@ form.addEventListener('submit', function (event) {
     const height = svg.attr("height") - margin.top - margin.bottom;
 
     const xScale = d3.scaleBand()
-        .domain(rollNumArray)
+        .domain(rollNumArray)//domain in the X axis of the d3 svg is dictated by the size of the rollNumArray Array -s
         .range([margin.left, width + margin.left])
         .padding(0.1); // Adjust padding as needed
 
@@ -50,7 +54,7 @@ form.addEventListener('submit', function (event) {
         .data(countArray)
         .enter()
         .append("rect")
-        .attr("x", (d, i) => xScale(rollNumArray[i]))
+        .attr("x", (d, i) => xScale(rollNumArray[i])) //Bar Scaler(Verticle) based on value -s
         .attr("y", d => yScale(d))
         .attr("width", xScale.bandwidth())
         .attr("height", d => height - yScale(d))
