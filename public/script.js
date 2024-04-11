@@ -1,3 +1,4 @@
+//Im in heheheh -s (small commit test)
 function getPartialSum(diceSidesNum) {
     if (diceSidesNum <= 0) {
         return null; // Handle non-positive inputs (optional)
